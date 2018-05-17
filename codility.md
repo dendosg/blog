@@ -14,3 +14,15 @@ Những điểu cần chú ý
 
 Solution Codility
 
+Viết UT
+
+Hướng giải quyết
+
+Pseudo code
+
+Implement
+
+Chạy UT
+
+
+
