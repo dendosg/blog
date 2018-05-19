@@ -1,0 +1,31 @@
+---
+description: Những điểu cần biết về Codility
+---
+
+* Codility
+
+** Luyện thuật toán cùng Codility
+
+*** Codility là gì
+*** Thuật toán và cách đo hiệu năng
+*** Những điểu cần chú ý
+*** Solution Codility
+*** Viết UT
+*** Hướng giải quyết
+*** Pseudo code
+*** Implement
+*** Chạy UT
+
+*** Các bước phân tích
+- Problem: Peaks
+- PT:
+  l = arr.length;
+  getFactors l => [f1, ....f2]
+  peaks array => [false, true, ....true, false];
+  for each factor f1 (f1 > 1) => we have l / f1 blocks we can skip 1
+  we have l / f1 blocks =>
+  check if each block has a peak
+  how to check for a slice (i, j) contains a block ?
+  1. loop i => j if peaks[k] = true => O(n)
+  2. use memorize to get O(i)
+
