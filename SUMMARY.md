@@ -4,6 +4,6 @@
 * [Codility](codility/README.md)
   * [Tổng quan](codility/tong-quan.md)
   * Lessions
-    * Lession 01
-    * Lession 02
+    * [Lession 01](codility/lessions/lession-01.md)
+    * [Lession 02](codility/lessions/untitled.md)
 
