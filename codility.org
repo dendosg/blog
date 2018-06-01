@@ -1,7 +1,3 @@
----
-description: Những điểu cần biết về Codility
----
-
 * Codility
 
 ** Luyện thuật toán cùng Codility
@@ -17,15 +13,105 @@ description: Những điểu cần biết về Codility
 *** Chạy UT
 
 *** Các bước phân tích
-- Problem: Peaks
-- PT:
-  l = arr.length;
-  getFactors l => [f1, ....f2]
-  peaks array => [false, true, ....true, false];
-  for each factor f1 (f1 > 1) => we have l / f1 blocks we can skip 1
-  we have l / f1 blocks =>
-  check if each block has a peak
-  how to check for a slice (i, j) contains a block ?
-  1. loop i => j if peaks[k] = true => O(n)
-  2. use memorize to get O(i)
+    - Problem: Peaks
+    - PT:
+      l = arr.length;
+      getFactors l => [f1, ....f2]
+      peaks array => [false, true, ....true, false];
+      for each factor f1 (f1 > 1) => we have l / f1 blocks we can skip 1
+      we have l / f1 blocks =>
+      check if each block has a peak
+      how to check for a slice (i, j) contains a block ?
+      1. loop i => j if peaks[k] = true => O(n)
+      2. use memorize to get O(i)
+
+** CountSemiPrimes
+   Analysis:
+   Expected: Count number of SemiPrimes number within a range
+   - Question:
+     1. What is SemiPrimes number ? =>
+        - A semiprime is a natural number that is the product of two (not necessarily distinct) prime numbers. The first few semiprimes are 4, 6, 9, 10, 14, 15, 21, 22, 25, 26.
+        - Prime number is NOT semiprime
+     2. How to determine a number is a SemiPrimes number ?
+        - Brute Force: Find factors of N => if it has only 2 factors [1, f1] f1 and N/f1 is prime so its a semiprime number
+        - Sieve of Eratosthenes: Each time cross out a number remember the number of its prime factors?
+     3. After 2 we get an array of prime (value = 0), and semi primie (value = 2), compositie number (value > 2)
+     4. How to know a number of SemiPrime within a range => use prefix sum for that
+   - Algorith:
+     1. Caculate Sieve ofr Eratostheses to remember the number of prime factor
+     2. Caculate PrefixSum
+     3. Loop and done
+
+** CountNonDivisible
+   Analysis:
+   Expected: count the number of elements of the array that are not the divisors of A[i]
+   - Question:
+     1. What is a non-divisors of A[i] i.e all other element in the array that nots divisors of A[i]
+     2. expected worst-case time complexity is O(N*log(N)) ? Look like a sort algorith, or loop with a binary search
+     3. Only the count number of non-divisor not the non-divisor ? OK
+     4. Length of result == Length of input
+     5. How to determine non-divisors of A[i]
+        - Brute force: loop i for A[i] then loop k (k != i) if A[i] div A[k] then A[k] is no divisor else add it to the result list
+        - Sieve:
+          1. Build a sieve of divisor for each number
+          2. Build a map contains number of occurence for each number
+          3. Let l be count of all element
+          4. The count of non-divisor will be l - Sum of ocurrence of all divisor of A[i]
+          5. Example: [3, 1, 2, 3, 6] => Sieve: [0, 0, 0, 0, 2, 0, 2]
+          6. Map: { 0: 0, 1: 1, 2: 1, 3: 2, 6: 1}
+          7. Count total: 5
+          8. 3 => divisor [1, 3] => count of non-divisor 5 - 1 - 2 = 2 (1 appears 1 times, 3 appears 2 times)
+          9. 1 => divisor [1] => count of non-divisor 5 - 1 = 4
+          10. 2 => divisort [1, 2] => count of non-divisort 5 - 1 - 1 = 3
+          11. 3 => already counted
+          12. 6 => divisort [1, 2, 3, 6] => count of non-divisort 5 - 1 - 1 - 2 - 1 = 0
+          13. Hence return [2, 4, 3, 2, 0]
+** Ladder
+   Expected: count the number of way to climb a leader
+   - Question:
+     1. How to know to number of way to climb a ladder ? Ans: suppose we have n-ladder to go ladder n-th we have 2 way: 1) get to the n-1(thn) and n-2(thn) ladder => ladder(n) = ladder(n - 2) + ladder(n - 1);
+     2. Look like fibonacci
+     3. Problem fibonacci increase expotentionally so each element need to modolu 2 ** i ? how to optimize ?
+     4. Calculate fibonacci with ladder(n) % 2 ** 30 = c
+     5. For each element in B => c % b(i) since if a % (2 ** 30) = c => a = (2 ** 30) * r + c => a % 2 = (2 ** 30) * r % 2 + c % 2 = c % 2
+
+** Fib Frog
+   Expected: count the number for Fib that the sum equal length + 1
+   - Question:
+  // length 12
+  // Fib < 12 => 1 1 2 3 5 8 13 21
+  // Posible steps: 4 5 7
+  // 12 = Sum(any prime that < 12)
+  // Count those prime
+  // 4 => NP
+  //  5 => OK
+  // 5 -> 7 = 2 Fib => Ok
+  // 7 => 12 - 7 = 5 Fib => OK
+
+  // 12 => 4 + 8 => Fail
+  // 12 => 5 + Fib(12 - 5)
+  // [4, 5, 7] // const [head, ...rest] = arr
+  // position: -1
+  // if (Fib(head - position) => return ret(head, rest, count + 1);
+  // else // fib(next - position) => return ret(head, res, count + 1);
+  // if rest.length === 0 => return count;
+  // fibFrog(-1, [3, 4, 6], 1)
+  // fibFrog(3, [4, 6], 2) // Fail
+
+  // fibFrog(4, [6, 11], 1)
+  // figFrog(6, [11], 2)
+  // figFrog(11, [], 3) => 3
+
+  // 2 8 15
+  // -1 => 8 => 15 Fail
+  // -1 => 15 Fail
+  // 2 => 15 => OK
+  // chu chu
+- Gỉa sử -1 => N là 1 đường thẳng, bài toàn trở thành ta có thể chia đoạn -1 => N thành bao nhiêu đoạn mà độ dài mỗi đoạn là tổng của số prime bất kỳ
+- Sử dụng Breadth Firsth Search để kiếm
+First try: https://app.codility.com/demo/results/trainingVP3YKX-AK6/
+Can we do better ?
+Optimized: https://app.codility.com/demo/results/training6HAX8V-HPW/
+
+
 

@@ -1,0 +1,54 @@
+* Nailing Planks
+
+Count the minimum number of nails that allow a series of planks to be nailed.
+
+The goal is to find the minimum number of nails that must be used until all the planks are nailed. In other words, you should find a value J such that all planks will be nailed after using only the first J nails. More precisely, for every plank (A[K], B[K]) such that 0 ≤ K < N, there should exist a nail C[I] such that I < J and A[K] ≤ C[I] ≤ B[K].
+
+Assume that:
+
+N and M are integers within the range [1..30,000];
+each element of arrays A, B, C is an integer within the range [1..2*M];
+A[K] ≤ B[K].
+Complexity:
+
+expected worst-case time complexity is O((N+M)*log(M));
+expected worst-case space complexity is O(M) (not counting the storage required for input arguments).
+
+** Yêu cầu bài toán:
+Tìm đinh nhỏ nhất sao cho tất cả tầm ván đều được gim
+Hay có thể hiểu là tìm số nhỏ để đóng đinh được hết các tầm ván
+
+** Phân tích bài toán:
+Q: 1 tấm ván được coi là đóng đinh khi nào ?
+A: Khi tồn tại C[i] sao cho A[k] <= C[i] <= B[k]
+Q: 1 cái đinh có thể đóng được bao nhiều tấm ván ?
+A: có thể đóng được bao nhiều tấm cũng được miễn sao thoả mãn điều kiện A[k] <= C[i] <= B[k]
+Q: cho đinh là D làm sao xác định được tấm ván nào sẽ bị gim ?
+A: Có 2 cách:
+1. Duyệt i từ 0 -> N - 1 => nếu A[i] <= D <= B[i]  thì i chính là biến cần tìm => O(n * m)
+2. Sử dụng binary search để kiếm A[i] <= D <= B[i] => cần sort array AB => O(n * log(n)), với mỗi đinh ta cần sử dụng binary search => O(m * log(n)) => Total: O((n + m) log(n))
+
+** Ý tưởng
+Cần 1 biến để kiểm tra số lượng ván đã đóng đinh, nailed = [];
+Với mỗi đinh D, tìm tất cả những ván có thể được đóng bới D  => S1 => nailed[S] = true
+nailed === N ta đã đóng hết trả về lần lặp đinh 
+Sử dụng binary search để kiếm A[i] <= D <= B[i] => cần sort array AB => O(n * log(n)), với mỗi đinh ta cần sử dụng binary search => O(m * log(n)) => Total: O((n + m) log(n))
+
+** Trien khai
+Native
+
+Cho mỗi 1 planks ta tìm xem có đinh nào để đóng plank A không
+Nếu không có return -1
+Nếu có tiếp tục, nhớ lại index của đinh đã đóng plank A
+Tiếp tục với plank B, nhớ lại index cho plank B indexB => nều indexB < indexA plankB được đóng khi đến indexA => indexA
+nếu indexB > indexA => return indexB vì khi đó plank A mới được gim
+Để ghim 1 plank thì nail >= plankStart 
+
+Native:
+loop từng phần tử của nail => check nail đó có ghim đc toàn bộ planks không ? nếu có thì đó là nail cần tìm
+nếu không next nail => đến cuối cùng không có trả về -1
+
+Đoạn check có thể sử dụng prefix sum để kiểm tra
+1 planks [1, 4] => nail 2 prefix sum 0 1 1 1 1
+
+loop phan tu van cham ta co the improve bang cach su dung binary search

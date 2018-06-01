@@ -1,0 +1,14 @@
+* Lession 14 - Binary Search
+Bài này nói về thuật tuấn tìm kiếm nhị phân.
+Ý tưởng đơn giản thôi đó chính là:
+Cho 1 dãy các số làm sao để tìm kiếm 1 số nhanh nhất.
+Ở đây có 2 cách:
+1. Cách phổ thông: duyệt lần lượt từng phần tử của mảng để tìm => O(n)
+2. Cách tối ưu hơn: nếu mảng đó đã được sắp xếp thì sử dụng thuật toán tìm nhị phân, nghĩa là:
+Bắt đầu từ thành phần ở chính giữa của mảng
+Ta đặt câu hỏi: phẩn tử muốn tìm nhỏ hơn phần tử giữa không ?
+ phần tử muốn tìm lớn hơn phần tử giữa không ?
+Looo
+
+Cách 2 này hiệu năng là O(log(n)) giảm khá là đáng kể so với O(n) thuật toán tuyến tính
+
