@@ -1,0 +1,79 @@
+| Tên sách                                     | Tên Tác Giả            | Thể loại    | Bản quyền | NXB         | Ngày bắt đầu đọc | Ngày đọc xong    | Comment |
+|----------------------------------------------+------------------------+-------------+-----------+-------------+------------------+------------------+---------|
+| Sherlock Holmes Toàn Tập - 1                 | Sir Arthur Conan Doyle | Trinh Thám  |           | NXB Văn Học | <2016-05-01 Sun> | <2017-08-01 Tue> |         |
+| Sherlock Holmes Toàn Tập - 2                 | Sir Arthur Conan Doyle | Trinh Thám  |           |             |                  |                  |         |
+| Sherlock Holmes Toàn Tập - 3                 | Sir Arthur Conan Doyle | Trinh Thám  |           |             |                  |                  |         |
+| Để trở thành Sherlock Holmes                 | Ransom Riggs           | Trinh Thám  |           |             |                  |                  |         |
+| Án Mạng Trên Chuyến Tàu Tốc Hành Phương Đông | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Mười Người Da Đen Nhỏ                        | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Vụ Ám Sát Ông Roger Ackroyd                  | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Án Mạng Trên Sân Golf                        | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Án Mạng Trên Sông Nile                       | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Chuỗi Án Mạng A.B.C                          | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Vụ Án Bí ẩn Tại Styles                       | Agatha Christie        | Trinh Thám  |           |             |                  |                  |         |
+| Hẹn Với Thần Chết                            | Agatha Christie        | Trinh Thám  |           |             | <2018-03-08 Thu> | <2018-03-27 Tue> |         |
+| Ngôi Nhà Quái Dị                             | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-03-27 Tue> | <2018-04-01 Sun> |         |
+| Những chiếc đồng hồ kỳ lạ                    | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-04-02 Mon> | <2018-04-21 Sat> |         |
+| Tận cùng là cái chết                         | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-04-21 Sat> | <2018-04-30 Mon> |         |
+| Thời Khắc Định Mệnh                          | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-05-01 Tue> | <2018-08-03 Fri> |         |
+| Cô Gái Thứ Ba                                | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-08-06 Mon> | <2018-08-20 Mon> |         |
+| Con Mèo Giữa Đám Bồ Câu                      | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     | <2018-08-20 Mon> | <2018-09-01 Sat> |         |
+| 5 giờ 25 phút                                | Agatha Christie        | Trinh Thám  |           | NXB Tre     | <2018-09-01 Sat> | <2018-09-20 Thu> |         |
+| Án mạng đêm Giáng Sinh                       | Agatha Christie        | Trinh Thám  |           | NXB Tre     | <2018-09-20 Thu> |                  |         |
+| Án Mạng Ở Nhà Mục Vụ                         | Agatha Christie        | Trinh Thám  |           | NXB Trẻ     |                  |                  |         |
+| Phía sau nghi can X                          | Higashino Keigo        | Trinh Thám  |           |             |                  |                  |         |
+| Bạch dạ hành                                 | Higashino Keigo        | Trinh Thám  |           |             |                  |                  |         |
+| Tokyo Hoàng Đạo Án                           | Soji Shimada           | Trinh Thám  |           |             |                  |                  |         |
+| Đề thi đẫm máu                               | Lôi Mễ                 | Trinh Thám  |           |             |                  |                  |         |
+| Cô gái mất tích                              | Gillian Flynn          | Trinh Thám  |           |             |                  |                  |         |
+| Cô gái trên tàu                              | Paula Hawkins          | Trinh Thám  |           |             |                  |                  |         |
+| Bóng hình của gió                            |                        | Trinh Thám  |           |             |                  |                  |         |
+| Mật mã Da Vinci (Da Vinci Code)              | Dan Brown              | Trinh Thám  |           |             |                  |                  |         |
+| Thiên thần và ác quỷ                         | Dan Brown              | Trinh Thám  |           |             |                  |                  |         |
+| Cô gái có hình xăm rồng                      | Stieg Larsson          | Trinh Thám  |           |             |                  |                  |         |
+| 20 giờ đầu tiên                              | Josh Kaufman           | Kỹ năng mềm |           |             |                  |                  |         |
+| Tuổi trẻ đáng giá bao nhiêu                  | Rosie Nguyễn           | Kỹ năng mềm |           |             |                  |                  |         |
+| Nói luôn cho nó vuông                        | Steve Harvey           | Kỹ năng mềm |           |             |                  |                  |         |
+| Cư xử như đàn bà, suy nghĩ như đàn ông       | Steve Harvey           | Kỹ năng mềm |           |             |                  |                  |         |
+| Luận về Yêu                                  | Alain De Botton        | Kỹ năng mềm |           |             |                  |                  |         |
+| Kỹ năng lắng nghe trong giao tiếp            | Hiraki Noriko          | Kỹ năng mềm |           |             |                  |                  |         |
+| Cuốn sách hoàn hảo về ngôn ngữ cơ thể        | Allan & Barbara Pease  | Kỹ năng mềm |           |             |                  |                  |         |
+| Đắc nhân tâm                                 | Dale Carnegie          | Kỹ năng mềm |           |             |                  |                  |         |
+| Thuật đọc nguội                              |                        | Kỹ năng mềm |           |             |                  |                  |         |
+| Thuật tẩy não                                |                        | Kỹ năng mềm |           |             |                  |                  |         |
+| Đọc vị bất kỳ ai                             |                        | Kỹ năng mềm |           |             |                  |                  |         |
+| 13 Nguyên tắc nghĩ giàu, làm giàu            |                        | Kỹ năng mềm |           |             |                  |                  |         |
+| Vương quốc sáng tạo                          |                        | Kỹ năng mềm |           |             |                  |                  |         |
+| Yoga và thiền định - Raja Toga               | Nawami                 | Kỹ năng mềm |           |             |                  |                  |         |
+| Tôi tự học                                   |                        | Cổ học      |           |             |                  |                  |         |
+| Cái cười của Thánh Nhân                      |                        | Cổ học      |           |             |                  |                  |         |
+| Binh pháp Tôn Tử                             |                        | Cổ học      |           |             |                  |                  |         |
+| Tình yêu và toán học                         |                        | Tiểu thuyết |           |             |                  |                  |         |
+| Ngày cuối trong đời của Socrates             | Plato                  |             |           |             |                  |                  |         |
+| Bá tước Monte Cristo                         | Alexandre Dumas        |             |           |             |                  |                  |         |
+| Ông già và biển cả                           | Ernest Hemingway       |             |           |             |                  |                  |         |
+| Ba gã cùng thuyền (chưa kể con chó)          | Jerome K. Jerome       |             |           |             |                  |                  |         |
+| Don Quixote                                  |                        |             |           |             |                  |                  |         |
+| Rừng Na Uy                                   | Haruki Murakami        |             |           |             |                  |                  |         |
+| Kafka bên bờ biển                            | Haruki Murakami        |             |           |             |                  |                  |         |
+| Giáo sư và công thức toán                    |                        |             |           |             |                  |                  |         |
+| Cửa tiệm của những lá thư                    | Yasushi Kitagawa       |             |           |             |                  |                  |         |
+| Lối sống tối giản của người Nhật             |                        |             |           |             |                  |                  |         |
+| Nhân tố Enzyme                               |                        |             |           |             |                  |                  |         |
+| Lolita                                       | Vladimir Nobokov       |             |           |             |                  |                  |         |
+| Người về từ Sao Hoả                          |                        |             |           |             |                  |                  |         |
+| Nỗi cô đơn của các sô nguyên tố              |                        |             |           |             |                  |                  |         |
+| AQ chính truyện                              |                        |             |           |             |                  |                  |         |
+| Tony buổi sáng                               |                        |             |           |             |                  |                  |         |
+| Khi lỗi thuộc về những vì sao                |                        |             |           |             |                  |                  |         |
+| Nếu em không phải một giấc mơ                | Marc Levy              |             |           |             |                  |                  |         |
+| Hẹn em ngày đó                               | Guillaume Musso        |             |           |             |                  |                  |         |
+| Grokking Algorithms                          | Aditya Y. Bhargava     | Technical   |           |             | <2018-05-01 Tue> | <2018-05-04 Fri> |         |
+|                                              |                        |             |           |             |                  |                  |         |
+#+TBLFM: 
+
+Reference:
+- https://www.facebook.com/groups/hoitrinhtham/permalink/491724911038647/
+- https://www.goodreads.com/list/show/11.Best_Crime_Mystery_Books
+- 1.1. TRUYỆN TRINH THÁM NHẬP MÔN: (lv. sơ cấp): https://www.facebook.com/groups/hoitrinhtham/permalink/340442159500257/
+- 1.2. NHỮNG TRUYỆN TRINH THÁM NÊN ĐỌC ÍT NHẤT MỘT LẦN TRONG ĐỜI: (lv. trung cấp): https://www.facebook.com/groups/hoitrinhtham/permalink/685267795017690/
